@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="sg.edu.rp.c346.testtranslatorapp.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/translatabletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.07"
+        android:text="Good Night!"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/chineseText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.07"
+        android:text="Good Night!"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/translateedittext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/translatabletext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:hint="English "
+        android:padding="5dp" />
+
+    <Button
+    android:id="@+id/translatebutton"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/translateedittext"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:textStyle="bold"
+    android:text="Translate" />
+
+
+</LinearLayout>
